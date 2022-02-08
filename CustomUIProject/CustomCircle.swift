@@ -45,26 +45,9 @@ class CustomCircle: UIView {
         workingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         workingView.layer.cornerRadius = frame.size.width / 2
         workingView.layer.masksToBounds = true
-        
+        workingView.backgroundColor = .blue
         
         addSubview(workingView)
     }
     
-//    @IBAction func panAction(_ gesture: UIPanGestureRecognizer) {
-//
-//        let gestureTranslation = gesture.translation(in: vc.view)
-//
-//        guard let gestureView = gesture.view else {
-//            return
-//        }
-//
-//        gestureView.center = CGPoint(x: gestureView.center.x + gestureTranslation.x, y: gestureView.center.y + gestureTranslation.y)
-//
-//        gesture.setTranslation(.zero, in: vc.view)
-//
-//        guard gesture.state == .ended else {
-//            return
-//        }
-//
-//    }
 }
