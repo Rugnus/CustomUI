@@ -1,24 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomUIProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qde-Tp-OS9" customClass="CustomCircle" customModule="CustomUIProject" customModuleProvider="target">
+                                <rect key="frame" x="76" y="276" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZDn-hI-Ft5" appends="YES" id="iOY-Ec-3qU"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5nT-HU-bIB" customClass="CustomCircle" customModule="CustomUIProject" customModuleProvider="target">
+                                <rect key="frame" x="283" y="217" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="CgD-gF-NYp" appends="YES" id="4uJ-CQ-SPb"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSD-a1-0LM" customClass="CustomCircle" customModule="CustomUIProject" customModuleProvider="target">
+                                <rect key="frame" x="292" y="404" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="i8w-nt-5cR" appends="YES" id="Sjw-aN-Wca"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYd-c4-UnN" customClass="CustomCircle" customModule="CustomUIProject" customModuleProvider="target">
+                                <rect key="frame" x="69" y="699" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="maT-ht-9Qa" appends="YES" id="mev-4k-LUQ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6pD-bn-bpS" customClass="CustomCircle" customModule="CustomUIProject" customModuleProvider="target">
+                                <rect key="frame" x="147" y="88" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8Ov-Du-d5r" appends="YES" id="OMj-VS-HuF"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fd5-fW-7YU" customClass="CustomCircle" customModule="CustomUIProject" customModuleProvider="target">
+                                <rect key="frame" x="283" y="677" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rTT-wr-CI3" appends="YES" id="UHT-DN-hVS"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sVo-Tb-XFe" customClass="CustomCircle" customModule="CustomUIProject" customModuleProvider="target">
+                                <rect key="frame" x="76" y="511" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TRw-iu-GMR" appends="YES" id="Rdw-8X-vqP"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="circleFive" destination="sVo-Tb-XFe" id="MTO-d0-Mst"/>
+                        <outlet property="circleFour" destination="aSD-a1-0LM" id="WPi-Tf-PO4"/>
+                        <outlet property="circleOne" destination="6pD-bn-bpS" id="Bna-5r-Nc4"/>
+                        <outlet property="circleSeven" destination="lYd-c4-UnN" id="cT0-p4-k7z"/>
+                        <outlet property="circleSix" destination="Fd5-fW-7YU" id="F9U-uy-pgf"/>
+                        <outlet property="circleThree" destination="qde-Tp-OS9" id="ElE-2Z-eLV"/>
+                        <outlet property="circleTwo" destination="5nT-HU-bIB" id="0Ev-sk-I0u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZDn-hI-Ft5">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="s7u-rQ-zXL"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="LSh-A8-WTj"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="8Ov-Du-d5r">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="hgv-Sg-P4Z"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="kZD-uH-qwu"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="CgD-gF-NYp">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Pbf-Au-7RI"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="4zq-SF-hf6"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="i8w-nt-5cR">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="lsE-Bc-mfZ"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="7JT-Xu-hYR"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="TRw-iu-GMR">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="JcS-gp-kef"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="3Rw-kk-dFp"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="rTT-wr-CI3">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Wlj-2q-O3f"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="vd4-Ng-Lqr"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="maT-ht-9Qa">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="dYk-Q1-jVM"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="wF4-HU-IQU"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -13,6 +13,8 @@
 		B3D3729E27B1AD5A00A823C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D3729C27B1AD5A00A823C3 /* Main.storyboard */; };
 		B3D372A027B1AD5B00A823C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D3729F27B1AD5B00A823C3 /* Assets.xcassets */; };
 		B3D372A327B1AD5B00A823C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D372A127B1AD5B00A823C3 /* LaunchScreen.storyboard */; };
+		B3D372AB27B1AE5A00A823C3 /* CustomCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D372AA27B1AE5A00A823C3 /* CustomCircle.xib */; };
+		B3D372AD27B1AE7D00A823C3 /* CustomCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D372AC27B1AE7D00A823C3 /* CustomCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B3D3729F27B1AD5B00A823C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3D372A227B1AD5B00A823C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3D372A427B1AD5B00A823C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D372AA27B1AE5A00A823C3 /* CustomCircle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCircle.xib; sourceTree = "<group>"; };
+		B3D372AC27B1AE7D00A823C3 /* CustomCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B3D3729F27B1AD5B00A823C3 /* Assets.xcassets */,
 				B3D372A127B1AD5B00A823C3 /* LaunchScreen.storyboard */,
 				B3D372A427B1AD5B00A823C3 /* Info.plist */,
+				B3D372AA27B1AE5A00A823C3 /* CustomCircle.xib */,
+				B3D372AC27B1AE7D00A823C3 /* CustomCircle.swift */,
 			);
 			path = CustomUIProject;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				B3D372A327B1AD5B00A823C3 /* LaunchScreen.storyboard in Resources */,
 				B3D372A027B1AD5B00A823C3 /* Assets.xcassets in Resources */,
+				B3D372AB27B1AE5A00A823C3 /* CustomCircle.xib in Resources */,
 				B3D3729E27B1AD5A00A823C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				B3D3729B27B1AD5A00A823C3 /* ViewController.swift in Sources */,
 				B3D3729727B1AD5A00A823C3 /* AppDelegate.swift in Sources */,
+				B3D372AD27B1AE7D00A823C3 /* CustomCircle.swift in Sources */,
 				B3D3729927B1AD5A00A823C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
