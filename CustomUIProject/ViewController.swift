@@ -39,22 +39,32 @@ class ViewController: UIViewController {
         let circles: [CustomCircle] = [circleOne, circleTwo, circleThree, circleFour, circleFive, circleSix, circleSeven]
         
         let circleOneFrame = circleOne.frame
-        let circleTwoFrame = circleTwo.frame
-        let circleThreeFrame = circleThree.frame
-        let circleFourFrame = circleFour.frame
-        let circleFiveFrame = circleFive.frame
-        let circleSixFrame = circleSix.frame
-        let circleSevenFrame = circleSeven.frame
+        let animation = CABasicAnimation(keyPath: "transform.scale.x")
+        animation.fromValue = 1
+        animation.toValue = 1.2
+        animation.duration = 3
+        animation.autoreverses = false
         
+        let animationH = CABasicAnimation(keyPath: "transform.scale.y")
+        animationH.fromValue = 1
+        animationH.toValue = 1.2
+        animationH.duration = 3
+        animationH.autoreverses = false
         
         for val in Int(circleOneFrame.minY)...Int(circleOneFrame.maxX) {
             for i in 1..<circles.count {
                 if Int(circles[i].frame.origin.y) == val {
                     circles[i].isHidden = true
                     circles[i].frame = CGRect(x: circles[i].frame.minX, y: circles[i].frame.minY, width: 0, height: 0)
-                    circleOne.frame = CGRect(x: circleOne.frame.minX, y: circleOne.frame.minY, width: circleOne.frame.width + 5, height: circleOne.frame.height + 5)
                     circleOne.layer.cornerRadius = circleOne.frame.width / 2
                     circleOne.layer.masksToBounds = true
+                    UIView.animate(withDuration: 3, delay: 0, options: .curveEaseInOut, animations: {
+                        self.circleOne.frame = CGRect(x: self.circleOne.frame.minX, y: self.circleOne.frame.minY, width: self.circleOne.frame.width + 10, height: self.circleOne.frame.height + 10)
+                        self.circleOne.backgroundColor = .purple
+                    }, completion: nil)
+                    circleOne.layer.cornerRadius = circleOne.frame.width / 2
+                    circleOne.layer.masksToBounds = true
+                    
                 }
             }
             break
